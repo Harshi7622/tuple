@@ -1,0 +1,20 @@
+'''
+7) Write a program to get the tuple values in a single line separated by space and count the nuber of times the given x value is present in the given tuple.
+Sample Input:
+1 2 3 1 2 3 4 1 2 1
+1
+Sample Output:
+4
+'''
+# Get the tuple values from the user in a single line
+elements = input("Enter the tuple values separated by space: ")
+my_tuple = tuple(map(int, elements.split()))
+
+# Get the value to count from the user
+value_to_count = int(input("Enter the value to count: "))
+
+# Count the occurrences of the value in the tuple
+count = my_tuple.count(value_to_count)
+
+# Print the count
+print(count)
