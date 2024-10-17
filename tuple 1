@@ -1,0 +1,17 @@
+'''
+3) Write a program to get the tuple elements in a single line separated by spaces and print the number of elements in the given tuple.
+Sample Input:
+10 20 30
+Sample Output:
+3
+'''
+
+# Get the tuple elements from the user
+elements = input("Enter the tuple elements separated by space: ")
+my_tuple = tuple(map(int, elements.split()))
+
+# Get the number of elements in the tuple
+number_of_elements = len(my_tuple)
+
+# Print the number of elements
+print(number_of_elements)
