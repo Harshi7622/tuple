@@ -1,0 +1,29 @@
+'''
+6) Write a program to get n number of values from user in separate line and print the minimum value of the given tuple.
+Sample Input:
+3
+20
+30
+10
+Sample Output:
+10
+'''
+# Get the number of elements
+n = int(input("Enter the number of elements: "))
+
+# Initialize an empty list to store the elements
+elements = []
+
+# Get the values from the user
+for _ in range(n):
+    element = int(input())
+    elements.append(element)
+
+# Create a tuple from the list of elements
+my_tuple = tuple(elements)
+
+# Calculate the minimum value of the tuple
+min_value = min(my_tuple)
+
+# Print the minimum value
+print(min_value)
